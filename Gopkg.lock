@@ -2,10 +2,41 @@
 
 
 [[projects]]
+  branch = "parse-constraints-with-dash-in-pre"
+  name = "github.com/Masterminds/semver"
+  packages = ["."]
+  revision = "a93e51b5a57ef416dac8bb02d11407b6f55d8929"
+  source = "https://github.com/carolynvs/semver.git"
+
+[[projects]]
+  name = "github.com/Masterminds/vcs"
+  packages = ["."]
+  revision = "6f1c6d150500e452704e9863f68c2559f58616bf"
+  version = "v1.12.0"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/armon/go-radix"
+  packages = ["."]
+  revision = "1fca145dffbcaa8fe914309b1ec0cfc67500fe61"
+
+[[projects]]
   name = "github.com/beevik/ntp"
   packages = ["."]
   revision = "62c80a04de2086884d8296004b6d74ee1846c582"
   version = "v0.2.0"
+
+[[projects]]
+  name = "github.com/boltdb/bolt"
+  packages = ["."]
+  revision = "2f1ce7a837dcb8da3ec595b1dac9d0632f0f99e8"
+  version = "v1.3.1"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/ceftb/sled"
+  packages = ["."]
+  revision = "45a97b11eb6eded3e9079c905c813800e912e54c"
 
 [[projects]]
   branch = "master"
@@ -15,12 +46,85 @@
 
 [[projects]]
   branch = "master"
-  name = "github.com/google/go-tpm"
+  name = "github.com/elves/elvish"
   packages = [
-    "tpm",
-    "tpmutil"
+    "build",
+    "daemon",
+    "edit",
+    "edit/completion",
+    "edit/eddefs",
+    "edit/highlight",
+    "edit/history",
+    "edit/lastcmd",
+    "edit/location",
+    "edit/lscolors",
+    "edit/prompt",
+    "edit/tty",
+    "edit/ui",
+    "eval",
+    "eval/bundled",
+    "eval/daemon",
+    "eval/re",
+    "eval/str",
+    "eval/vals",
+    "eval/vars",
+    "getopt",
+    "glob",
+    "parse",
+    "parse/parseutil",
+    "program",
+    "program/daemon",
+    "program/shell",
+    "program/web",
+    "runtime",
+    "store",
+    "store/storedefs",
+    "sys",
+    "util"
   ]
-  revision = "ca55a71865e26d3113cb6b281f72a50a1d82ea8a"
+  revision = "80ba0122ad3ddcb34d5288e6afd9dcfde496db6c"
+
+[[projects]]
+  name = "github.com/go-yaml/yaml"
+  packages = ["."]
+  revision = "7f97868eec74b32b0982dd158a51a446d1da7eb5"
+  version = "v2.1.1"
+
+[[projects]]
+  name = "github.com/golang/dep"
+  packages = [
+    ".",
+    "cmd/dep",
+    "gps",
+    "gps/internal/pb",
+    "gps/paths",
+    "gps/pkgtree",
+    "internal/feedback",
+    "internal/fs",
+    "internal/importers",
+    "internal/importers/base",
+    "internal/importers/glide",
+    "internal/importers/glock",
+    "internal/importers/godep",
+    "internal/importers/govend",
+    "internal/importers/govendor",
+    "internal/importers/gvt",
+    "internal/importers/vndr"
+  ]
+  revision = "37d9ea0ac16f0e0a05afc3b60e1ac8c364b6c329"
+  version = "v0.4.1"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/golang/protobuf"
+  packages = [
+    "proto",
+    "ptypes",
+    "ptypes/any",
+    "ptypes/duration",
+    "ptypes/timestamp"
+  ]
+  revision = "bbd03ef6da3a115852eaf24c8a1c46aeb39aa175"
 
 [[projects]]
   branch = "master"
@@ -53,6 +157,12 @@
   version = "v1.6.1"
 
 [[projects]]
+  name = "github.com/jmank88/nuts"
+  packages = ["."]
+  revision = "8b28145dffc87104e66d074f62ea8080edfad7c8"
+  version = "v0.3.0"
+
+[[projects]]
   name = "github.com/klauspost/compress"
   packages = ["flate"]
   revision = "6c8db69c4b49dd4df1fff66996cf556176d0b9bf"
@@ -75,6 +185,12 @@
   packages = ["."]
   revision = "0bf5dcad4ada2814c3c00f996a982270bb81a506"
   version = "v1.1"
+
+[[projects]]
+  name = "github.com/mattn/go-isatty"
+  packages = ["."]
+  revision = "0360b2af4f38e8d38c7fce2a9f4e702702d73a39"
+  version = "v0.0.3"
 
 [[projects]]
   branch = "master"
@@ -106,9 +222,39 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/nightlyone/lockfile"
+  packages = ["."]
+  revision = "6a197d5ea61168f2ac821de2b7f011b250904900"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/pelletier/go-toml"
+  packages = ["."]
+  revision = "05bcc0fb0d3e60da4b8dd5bd7e0ea563eb4ca943"
+
+[[projects]]
+  name = "github.com/pkg/errors"
+  packages = ["."]
+  revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
+  version = "v0.8.0"
+
+[[projects]]
+  branch = "master"
   name = "github.com/rck/unit"
   packages = ["."]
   revision = "16d9ed3d60d943bbb0ed704264795a2541457601"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/sdboyer/constext"
+  packages = ["."]
+  revision = "836a144573533ea4da4e6929c235fd348aed1c80"
+
+[[projects]]
+  name = "github.com/sirupsen/logrus"
+  packages = ["."]
+  revision = "c155da19408a8799da419ed3eeb0cb5db0ad5dbc"
+  version = "v1.0.5"
 
 [[projects]]
   branch = "master"
@@ -119,7 +265,7 @@
     "dhcp4opts",
     "internal/buffer"
   ]
-  revision = "a950c25c1e85927070c5395d644ae394a9caae2b"
+  revision = "1418bdb477e4970afa23412e3e54fc49c569ad0e"
 
 [[projects]]
   branch = "master"
@@ -128,13 +274,29 @@
     ".",
     "nl"
   ]
-  revision = "41009d533ba0788a139b0b6ef38923a23b3766d3"
+  revision = "5236321576c0c97ab02c078e60f9b1c5c1828807"
 
 [[projects]]
   branch = "master"
   name = "github.com/vishvananda/netns"
   packages = ["."]
   revision = "be1fbeda19366dea804f00efff2dd73a1642fdcc"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/xiaq/persistent"
+  packages = [
+    "hash",
+    "hashmap",
+    "vector"
+  ]
+  revision = "cd415c64068256386eb46bbbb1e56b461872feed"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/zaolin/go-tpm"
+  packages = ["tpm"]
+  revision = "81001ab120f1fe5e056b6b1bc4497ebe2b6b2bd5"
 
 [[projects]]
   branch = "master"
@@ -156,26 +318,64 @@
     "poly1305",
     "ripemd160",
     "sha3",
-    "ssh"
+    "ssh",
+    "ssh/terminal"
   ]
-  revision = "88942b9c40a4c9d203b82b3731787b672d6e809b"
+  revision = "c4a91bd4f524f10d064139674cf55852e055ad01"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/net"
   packages = [
     "bpf",
+    "context",
+    "http2",
+    "http2/hpack",
+    "idna",
     "internal/iana",
     "internal/socket",
-    "ipv4"
+    "internal/timeseries",
+    "ipv4",
+    "lex/httplex",
+    "trace"
   ]
-  revision = "6078986fec03a1dcc236c34816c71b0e05018fda"
+  revision = "892bf7b0c6e2f93b51166bf3882e50277fa5afc6"
+
+[[projects]]
+  branch = "master"
+  name = "golang.org/x/sync"
+  packages = ["errgroup"]
+  revision = "fd80eb99c8f653c847d294a001bdf2a3a6f768f5"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
-  packages = ["unix"]
-  revision = "91ee8cde435411ca3f1cd365e8f20131aed4d0a1"
+  packages = [
+    "unix",
+    "windows"
+  ]
+  revision = "8c0ece68c28377f4c326d85b94f8df0dace46f80"
+
+[[projects]]
+  name = "golang.org/x/text"
+  packages = [
+    "collate",
+    "collate/build",
+    "internal/colltab",
+    "internal/gen",
+    "internal/tag",
+    "internal/triegen",
+    "internal/ucd",
+    "language",
+    "secure/bidirule",
+    "transform",
+    "unicode/bidi",
+    "unicode/cldr",
+    "unicode/norm",
+    "unicode/rangetable"
+  ]
+  revision = "f21a4dfb5e38f5895301dc265a8def02365cc3d0"
+  version = "v0.3.0"
 
 [[projects]]
   branch = "master"
@@ -184,7 +384,43 @@
     "go/ast/astutil",
     "imports"
   ]
-  revision = "77106db15f689a60e7d4e085d967ac557b918fb2"
+  revision = "c1547a3f90f245aa85784a99580d3f601380cc07"
+
+[[projects]]
+  branch = "master"
+  name = "google.golang.org/genproto"
+  packages = ["googleapis/rpc/status"]
+  revision = "f8c8703595236ae70fdf8789ecb656ea0bcdcf46"
+
+[[projects]]
+  name = "google.golang.org/grpc"
+  packages = [
+    ".",
+    "balancer",
+    "balancer/base",
+    "balancer/roundrobin",
+    "codes",
+    "connectivity",
+    "credentials",
+    "encoding",
+    "encoding/proto",
+    "grpclb/grpc_lb_v1/messages",
+    "grpclog",
+    "internal",
+    "keepalive",
+    "metadata",
+    "naming",
+    "peer",
+    "resolver",
+    "resolver/dns",
+    "resolver/passthrough",
+    "stats",
+    "status",
+    "tap",
+    "transport"
+  ]
+  revision = "8e4536a86ab602859c20df5ebfd0bd4228d08655"
+  version = "v1.10.0"
 
 [[projects]]
   name = "pack.ag/tftp"
@@ -198,6 +434,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "e1a178092006f93c9de124c458d2eac8ad385d356d4328f475a9c1d49b661206"
+  inputs-digest = "60fc5ff1256aad682603ead37fd3ce6b53eb306ec20a12ed3f93b77c0bc179c0"
   solver-name = "gps-cdcl"
   solver-version = 1

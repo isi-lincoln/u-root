@@ -1,3 +1,7 @@
+required = [
+  "github.com/golang/dep/cmd/dep"
+]
+
 [[constraint]]
   branch = "master"
   name = "github.com/google/uuid"
@@ -5,6 +9,10 @@
 [[constraint]]
   branch = "master"
   name = "github.com/vishvananda/netlink"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/zaolin/go-tpm"
 
 [[constraint]]
   branch = "master"
@@ -31,6 +39,14 @@
   go-tests = true
   unused-packages = true
 
+  [[prune.project]]
+  name = "github.com/golang/dep"
+  unused-packages = false
+
 [[constraint]]
   name = "github.com/beevik/ntp"
   version = "0.2.0"
+
+[[constraint]]
+  name = "github.com/elves/elvish"
+  branch = "master"
